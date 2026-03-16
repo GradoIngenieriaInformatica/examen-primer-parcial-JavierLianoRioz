@@ -1,7 +1,7 @@
 db.libros.aggregate([
   {
     $group: {
-      _id: "$categoria",
+      _id: '$categoria',
       totalLibros: { $sum: 1 }
     }
   }
